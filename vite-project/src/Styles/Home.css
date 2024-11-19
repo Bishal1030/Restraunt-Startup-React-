@@ -1,0 +1,62 @@
+/* Home.css */
+
+/* Main container for the landing page */
+.landingPage {
+    background-color: rgb(27, 25, 25);
+    position: relative;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: hidden; /* Prevent scrolling */
+ 
+}
+
+.landingPage .text{
+    position: absolute;
+    top: 23%;
+    padding-left: 10rem;
+}
+
+/* Styling for the heading */
+.landingPage .text h1 {
+    font-size: 4rem; /* Adjust font size as needed */
+    color: white; /* Change text color to white for visibility */
+    margin: 3px; /* Remove default margin */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Styling for the paragraph */
+.landingPage .text p {
+    font-size: 1.3rem; /* Adjust font size as needed */
+    color: white; /* Change text color to white for visibility */
+    padding-left: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Image container for background and overlay */
+.image {
+    position: relative;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+
+/* Set the first image as the background */
+.image img:first-child {
+    position: absolute;
+    top: 0; /* Align to top */
+    left: -250px; /* Align to left */
+    width: 120%; /* Full width of the container */
+    height: 130%; /* Full height of the container */
+    object-fit: cover; /* Cover the entire container */
+    z-index: 0; /* Send this image behind */
+    opacity: 0.4; /* Adjust opacity */
+}
+
+/* Burger image on top of the background */
+.image img:nth-child(2) {
+    position: absolute;
+    top: 10rem; /* Adjust vertical position as needed */
+    right: 8rem; /* Adjust position as needed */
+    width: 30rem; /* Set size of the burger image */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 2; /* Ensure the burger appears above the background */
+}
